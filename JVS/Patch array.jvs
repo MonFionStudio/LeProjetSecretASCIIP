@@ -1,0 +1,317 @@
+
+//[0]vie [1]arm [2]degP [3]degM [4]ResM [5]Endu [6]Mana [7]Gold [8]exp
+		
+//Pou		
+		int[]poulet=new int[9];
+		poulet[0]=20;
+		poulet[1]=0;
+		poulet[2]=1;
+		poulet[3]=0;
+		poulet[4]=0;
+		poulet[5]=1;
+		poulet[6]=0;
+		poulet[7]=10;
+		poulet[8]=2;
+//MA		
+		int[]MA=new int[9];
+		MA[0]=75;
+		MA[1]=0;
+		MA[2]=2;
+		MA[3]=5;
+		MA[4]=10;
+		MA[5]=10;
+		MA[6]=20;
+		MA[7]=30;
+		MA[8]=10;
+//Elf		
+		int[]elf=new int[9];
+		elf[0]=75;
+		elf[1]=0;
+		elf[2]=5;
+		elf[3]=2;
+		elf[4]=10;
+		elf[5]=20;
+		elf[6]=10;
+		elf[7]=10;
+		elf[8]=10;
+//Guard		
+		int[]guard=new int[9];
+		guard[0]=200;
+		guard[1]=100;
+		guard[2]=10;
+		guard[3]=2;
+		guard[4]=50;
+		guard[5]=50;
+		guard[6]=20;
+		guard[7]=20;
+		guard[8]=50;
+//Jomo		
+		int[]jomo=new int[9];
+		jomo[0]=300;
+		jomo[1]=40;
+		jomo[2]=10;
+		jomo[3]=10;
+		jomo[4]=40;
+		jomo[5]=50;
+		jomo[6]=50;
+		jomo[7]=20;
+		jomo[8]=100;
+//Barbr		
+		int[]barbr=new int[9];
+		barbr[0]=150;
+		barbr[1]=20;
+		barbr[2]=20;
+		barbr[3]=5;
+		barbr[4]=10;
+		barbr[5]=50;
+		barbr[6]=10;
+		barbr[7]=10;
+		barbr[8]=50;
+//Sangl
+		int[]sangl=new int[9];
+		sangl[0]=200;
+		sangl[1]=50;
+		sangl[2]=10;
+		sangl[3]=0;
+		sangl[4]=0;
+		sangl[5]=1;
+		sangl[6]=0;
+		sangl[7]=5;
+		sangl[8]=20;
+//TrlMg
+		int[]trlm=new int[9];
+		trlm[0]=150;
+		trlm[1]=20;
+		trlm[2]=10;
+		trlm[3]=20;
+		trlm[4]=50;
+		trlm[5]=10;
+		trlm[6]=50;
+		trlm[7]=10;
+		trlm[8]=20;
+//Avent
+		int[]avent=new int[9];
+		avent[0]=200;
+		avent[1]=50;
+		avent[2]=15;
+		avent[3]=15;
+		avent[4]=50;
+		avent[5]=50;
+		avent[6]=50;
+		avent[7]=100;
+		avent[8]=20;
+//OurEnArm
+		int[]OEA=new int[9];
+		OEA[0]=400;
+		OEA[1]=50;
+		OEA[2]=30;
+		OEA[3]=0;
+		OEA[4]=10;
+		OEA[5]=3;
+		OEA[6]=0;
+		OEA[7]=70;
+		OEA[8]=200;
+//Palalol
+		int[]pala=new int[9];
+		pala[0]=300;
+		pala[1]=40;
+		pala[2]=40;
+		pala[3]=10;
+		pala[4]=20;
+		pala[5]=100;
+		pala[6]=20;
+		pala[7]=60;
+		pala[8]=100;
+//Nai
+		int[]nai=new int[9];
+		nai[0]=400;
+		nai[1]=100;
+		nai[2]=20;
+		nai[3]=5;
+		nai[4]=30;
+		nai[5]=50;
+		nai[6]=20;
+		nai[7]=20;
+		nai[8]=120;
+//PyrMag
+		int[]pyrm=new int[9];
+		pyrm[0]=200;
+		pyrm[1]=20;
+		pyrm[2]=5;
+		pyrm[3]=40;
+		pyrm[4]=75;
+		pyrm[5]=20;
+		pyrm[6]=100;
+		pyrm[7]=80;
+		pyrm[8]=80;
+//Arch
+		int[]arch=new int[9];
+		arch[0]=200;
+		arch[1]=20;
+		arch[2]=20;
+		arch[3]=20;
+		arch[4]=20;
+		arch[5]=50;
+		arch[6]=50;
+		arch[7]=30;
+		arch[8]=60;
+//Dradra
+		int[]DRA=new int[9];
+		DRA[0]=666;
+		DRA[1]=42;
+		DRA[2]=34;
+		DRA[3]=69;
+		DRA[4]=42;
+		DRA[5]=46;
+		DRA[6]=404;
+		DRA[7]=110;
+		DRA[8]=300;
+//Da mutherfckin SCRIPT
+		int[]SCRIPT=new int[9];
+		SCRIPT[0]=999;
+		SCRIPT[1]=999;
+		SCRIPT[2]=999;
+		SCRIPT[3]=999;
+		SCRIPT[4]=999;
+		SCRIPT[5]=999;
+		SCRIPT[6]=999;
+		SCRIPT[7]=0;
+		SCRIPT[8]=0;
+
+		int[]adv=new int[9];
+
+		if(select==1)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=poulet[i];
+			}
+		}
+
+		if(select==2)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=MA[i];
+			}
+		}
+
+		if(select==3)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=elf[i];
+			}
+		}
+
+		if(select==4)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=guard[i];
+			}
+		}
+
+		if(select==5)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=jomo[i];
+			}
+		}
+
+		if(select==6)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=barbr[i];
+			}
+		}
+
+		if(select==7)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=sangl[i];
+			}
+		}
+
+		if(select==8)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=trlm[i];
+			}
+		}
+
+		if(select==9)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=avent[i];
+			}
+		}
+
+		if(select==10)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=OEA[i];
+			}
+		}
+
+		if(select==11)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=pala[i];
+			}
+		}
+
+		if(select==12)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=nai[i];
+			}
+		}
+
+		if(select==13)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=pyrm[i];
+			}
+		}
+
+		if(select==14)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=arch[i];
+			}
+		}
+
+		if(select==15)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=DRA[i];
+			}
+		}
+
+		if(select==16)
+		{
+			for(int i=0;i<9;i++)
+			{
+				adv[i]=SCRIPT[i];
+			}
+		}
+
+
+
+
+
+
+
+		

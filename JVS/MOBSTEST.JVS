@@ -1,0 +1,38 @@
+
+void main()
+	{
+		
+//[1]vie [2]arm [3]degP [4]degM [5]ResM [6]Endu [7]Mana [8]Gold [9]exp
+		int[][]MOBS=new int[9][15];
+//Pou		
+		MOBS[1][1]=20;
+		MOBS[1][2]=0;
+		MOBS[1][3]=1;
+		MOBS[1][4]=0;
+		MOBS[1][5]=0;
+		MOBS[1][6]=1;
+		MOBS[1][7]=0;
+		MOBS[1][8]=10;
+		MOBS[1][9]=2;
+
+//MA		
+		MOBS[2][1]=75;
+		MOBS[2][2]=0;
+		MOBS[2][3]=2;
+		MOBS[2][4]=5;
+		MOBS[2][5]=10;
+		MOBS[2][6]=10;
+		MOBS[2][7]=20;
+		MOBS[2][8]=30;
+		MOBS[2][9]=10;
+		
+		for(int j=1;j<10;j++)
+		{
+		
+		for(int i=1;i<3;i++)
+		{
+			println(MOBS[i][j]+" ");
+		}
+		}
+		
+}

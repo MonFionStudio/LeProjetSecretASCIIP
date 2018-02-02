@@ -1,0 +1,376 @@
+
+void main()
+{
+	int yolo=209;
+	while(yolo!=0)
+	{
+		
+			if(yolo>=90)
+		{
+			println();
+			if(yolo>=89)
+		{
+			println();
+			if(yolo>=88)
+		{
+			println();
+			if(yolo>=87)
+		{
+			println();
+			if(yolo>=86)
+		{
+			println();
+			if(yolo>=85)
+		{
+			println();
+			if(yolo>=84)
+		{
+			println();
+			if(yolo>=83)
+		{
+			println();
+			if(yolo>=82)
+		{
+			println();
+			if(yolo>=81)
+		{
+			println();
+			if(yolo>=80)
+		{
+			println();
+			if(yolo>=79)
+		{
+			println();
+			if(yolo>=78)
+		{
+			println();
+			if(yolo>=77)
+		{
+			println();
+			if(yolo>=76)
+		{
+			println();
+			if(yolo>=75)
+		{
+			println();
+			if(yolo>=74)
+		{
+			println();
+			if(yolo>=73)
+		{
+			println();
+			if(yolo>=72)
+		{
+			println();
+			if(yolo>=71)
+		{
+			println();
+			if(yolo>=70)
+		{
+			println("             _____ _            _____ _     _             _____           _       _ ");
+			if(yolo>=69)
+		{
+			println("            |_   _| |          |  ___| |   | |           /  ___|         (_)     | |");
+			if(yolo>=68)
+		{
+			println("              | | | |__   ___  | |__ | | __| | ___ _ __  \\ `--.  ___ _ __ _ _ __ | |_");
+			if(yolo>=67)
+		{
+			println("              | | | '_ \\ / _ \\ |  __|| |/ _` |/ _ \\ '__|  `--. \\/ __| '__| | '_ \\| __|");
+			if(yolo>=66)
+		{
+			println("              | | | | | |  __/ | |___| | (_| |  __/ |    /\\__/ / (__| |  | | |_) | |_ ");
+			if(yolo>=65)
+		{
+			println("              \\_/ |_| |_|\\___| \\____/|_|\\__,_|\\___|_|    \\____/ \\___|_|  |_| .__/ \\__|");
+			if(yolo>=64)
+		{
+			println("                                                                         | |       ");
+			if(yolo>=63)
+		{
+			println("                                                                         |_|   ");
+			if(yolo>=62)
+		{
+			println();
+			if(yolo>=61)
+		{
+			println("                                            Production:");
+			if(yolo>=60)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=59)
+		{
+			println();
+			if(yolo>=58)
+		{
+			println();
+			if(yolo>=57)
+		{
+			println("                                           Réalisation :");
+			if(yolo>=56)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=55)
+		{
+			println();
+			if(yolo>=54)
+		{
+			println();
+			if(yolo>=53)
+		{
+			println("                                      Producteurs  exécutifs:");
+			if(yolo>=52)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=51)
+		{
+			println();
+			if(yolo>=50)
+		{
+			println();
+			if(yolo>=49)
+		{
+			println("                                             Ecriture:");
+			if(yolo>=48)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=47)
+		{
+			println();
+			if(yolo>=46)
+		{
+			println();
+			if(yolo>=45)
+		{
+			println("                                          Programmation :");
+			if(yolo>=44)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=43)
+		{
+			println();
+			if(yolo>=42)
+		{
+			println();
+			if(yolo>=41)
+		{
+			println("                                            Animations:");
+			if(yolo>=40)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=39)
+		{
+			println();
+			if(yolo>=38)
+		{
+			println("                                      Directeurs artistiques:");
+			if(yolo>=37)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=36)
+		{
+			println();
+			if(yolo>=35)
+		{
+			println();
+			if(yolo>=34)
+		{
+			println("                                            Graphistes:");
+			if(yolo>=33)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=32)
+		{
+			println();
+			if(yolo>=31)
+		{
+			println();
+			if(yolo>=30)
+		{
+			println("                                         Effets  spéciaux:");
+			if(yolo>=29)
+		{
+			println("                                         Brayan et Dimitri");
+			if(yolo>=28)
+		{
+			println();
+			if(yolo>=27)
+		{
+			println("                                          Casting:");
+			if(yolo>=26)
+		{
+			println("                                         Le  Poulet");
+			if(yolo>=25)
+		{
+			println("                                           L'Elfe");
+			if(yolo>=24)
+		{
+			println("                                      L'apprenti  Mage");
+			if(yolo>=23)
+		{
+			println("                                          Le Garde");
+			if(yolo>=22)
+		{
+			println("                                        L'Arbre Jomo");
+			if(yolo>=21)
+		{
+			println();
+			if(yolo>=20)
+		{
+			println("                                        Le  Sanglier");
+			if(yolo>=19)
+		{
+			println("                                         Le Barbare");
+			if(yolo>=18)
+		{
+			println("                                        Le Troll Mage");
+			if(yolo>=17)
+		{
+			println("                                        L'Aventurier");
+			if(yolo>=16)
+		{
+			println("                                      L'Ours en Armure");
+			if(yolo>=15)
+		{
+			println();
+			if(yolo>=14)
+		{
+			println("                                         Le Paladin "); 
+			if(yolo>=13)
+		{
+			println("                                           Le Nain");
+			if(yolo>=12)
+		{
+			println("                                          L' Archer");
+			if(yolo>=11)
+		{
+			println("                                         Le Pyromage");
+			if(yolo>=10)
+		{
+			println("                                          Le Dragon");
+			if(yolo>=9)
+		{
+			println();
+			if(yolo>=8)
+		{
+			println("                                           Sashimi");
+			if(yolo>=7)
+		{
+			println("                                           Alawak");
+			if(yolo>=6)
+		{
+			println("                                          Le Script");
+			if(yolo>=5)
+		{
+			println();
+			if(yolo>=4)
+		{
+			println();
+			if(yolo>=3)
+		{
+			println();
+			if(yolo>=2)
+		{
+			println();
+			if(yolo>=1)
+		{
+			println();
+			if(yolo>=0)
+		{
+			println("               © 2016, Brayan & Dimitri's The Elder Script™, all rights reserved.");
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+	sleep(30);
+	clear();
+	yolo=yolo-1;
+	}
+}

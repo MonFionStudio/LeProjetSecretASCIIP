@@ -1,0 +1,146 @@
+
+void main()
+{
+//Choix de l'ia
+		println("Choississez le comportement de vos adversaires:");
+		println("*Observateur");
+		println("Vos adversaires agissent selon vos faiblesses. (mode de jeu facile)");
+		println();
+		println("*Confiant");
+		println("Vos adversaires agissent selon leurs avantages. (mode de jeu normal)");
+		println();
+		println("*Intelligent");
+		println("Un mélange d'Observateur et de Confiant. (mode de jeu difficile)");
+		println();
+		println("*Aléatoire");
+		println("Chaque adversaire a son propre comportement.");
+		String compor = readString();
+
+		double[][]MOBS=new double[17][10];
+
+		MOBS[1][1]=20;
+		MOBS[1][2]=0;
+		MOBS[1][3]=100;
+		MOBS[1][4]=6;
+		MOBS[1][5]=0;
+		MOBS[1][6]=2;
+		MOBS[1][7]=2;
+		MOBS[1][8]=10;
+		MOBS[1][9]=2;
+
+
+		boolean observ=equal(compor, "Observateur");
+		boolean conf=equal(compor, "Confiant");
+		boolean intel=equal(compor, "Intelligent");
+		boolean alea=equal(compor, "Aléatoire");
+		int aleat=0;
+		int attaqueM=0;
+		int select=1;
+
+		double ratioP=MOBS[select][6]*0.7;
+		int moinsP=(int)(ratioP);
+		double percP=MOBS[select][6]+moinsP;
+
+		double ratioM=MOBS[select][7]*0.7;
+		int moinsM=(int)(ratioM);
+		double percM=MOBS[select][7]+moinsM;
+		
+		double[]Chara=new double[14];
+		
+		Chara[0]=140;
+		Chara[1]=30;
+		Chara[2]=60;
+		Chara[3]=15;
+		Chara[4]=8;
+		Chara[5]=10;
+		Chara[6]=50;	
+		Chara[7]=20;
+
+		
+
+		if(alea==true)
+		{
+			aleat=random(1,4);
+		}
+		print(+aleat);
+
+		if(observ==true || aleat==1)
+		{
+			if(Chara[5]>Chara[6])
+			{
+				attaqueM=2;
+			}else{
+				attaqueM=1;
+			}
+		}
+
+		if(conf==true || aleat==2)
+		{
+			if(MOBS[select][6]>=percM)
+					{
+						attaqueM = 1;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+
+					if(MOBS[select][7]>=percP)
+					{
+						attaqueM = 2;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+		}
+
+		if(intel==true || aleat==3)
+		{
+			if(Chara[5]>Chara[6])
+			{
+				if(MOBS[select][6]>percM)
+					{
+						attaqueM = 1;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+
+					if(MOBS[select][7]>percP)
+					{
+						attaqueM = 2;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+					
+				if(percP==percM)
+				{
+					attaqueM=2;
+				}
+				
+			}else{
+				if(MOBS[select][6]>percM)
+					{
+						attaqueM = 1;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+
+					if(MOBS[select][7]>percP)
+					{
+						attaqueM = 2;
+					}
+					else{
+						//attaqueM = random(1,3);
+					}
+					
+				if(percP==percM)
+				{
+					attaqueM=1;
+				}
+			}
+		}
+		println(+attaqueM);
+
+}

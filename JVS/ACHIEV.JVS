@@ -1,0 +1,236 @@
+
+void main()
+{
+	
+	boolean achjomo=false;
+	boolean achoea=false;
+	boolean achdra=false;
+	boolean achelf=false;
+	boolean achsash=false;
+	boolean achpou=false;
+	boolean achguer=false;
+	boolean achbarb=false;
+	boolean achavent=false;
+	boolean achlillvl=false;
+	boolean achmidlvl=false;
+	boolean achgr8lvl=false;
+	boolean achalawak=false;
+	int elfdd=0;
+	int poudd=0;
+	int barbdd=0;
+	int aventdd=0;
+
+
+
+//Conditions
+	if(JOMO)
+	{
+		achjomo=true;
+	}
+
+	if(OEA)
+	{
+		achoea=true;
+	}
+
+	if(DRA)
+	{
+		achdra=true;
+	}
+
+	if(MOBS[3][1]<=0)
+	{
+		elfdd=elfdd+1;
+	}
+
+	if(elfdd==10)
+	{
+		achelf=true;
+	}
+
+	if(MOBS[0][1]<=0)
+	{
+		achsash=true;
+	}
+
+	if(MOBS[1][1]<=0)
+	{
+		poudd=poudd+1;
+	}
+
+	if(poudd==10)
+	{
+		achpou=true;
+	}
+
+	if(MOBS[4][1]<=0)
+	{
+		achguer=true;
+	}
+
+	if(MOBS[6][1]<=0)
+	{
+		barbdd=barbdd+1;
+	}
+
+	if(barbdd==10)
+	{
+		achbarb=true;
+	}
+
+	if(MOBS[9][1]<=0)
+	{
+		aventdd=aventdd+1;
+	}
+
+	if(aventdd==10;)
+	{
+		achavent=true;
+	}
+
+	if(Chara[10]==5)
+	{
+		achlillvl=true;
+	}
+
+	if(Chara[10]==10)
+	{
+		achmidlvl=true;
+	}
+
+	if(Char[10]==15)
+	{
+		achgr8lvl=true;
+	}
+
+	if(Achat==true)
+	{
+		achalawak=true;
+	}
+
+
+//Accès
+	boolean achiev=false;
+	achiev =  equal(destination, "Achievements");
+
+	if(achiev==true)
+	{
+
+		println("                     ");
+		println("                                    _     _                                     _ ");
+		println("                          /\\       | |   (_)                                   | |  ");
+		println("                         /  \\   ___| |__  _  _____   _____ _ __ ___   ___ _ __ | |_ ___");
+		println("                        / /\\ \\ / __| '_ \\| |/ _ \\ \\ / / _ \\ '_ ` _ \\ / _ \\ '_ \\| __/ __|");
+		println("                       / ____ \\ (__| | | | |  __/\\ V /  __/ | | | | |  __/ | | | |_\\__ \\");
+		println("                      /_/    \\_\\___|_| |_|_|\\___| \\_/ \\___|_| |_| |_|\\___|_| |_|\\__|___/");
+		println();
+		println();
+		println();
+		println();
+		println("Combats :");
+		println();
+		println();
+		println();
+		if(achjomo==true)
+		{
+			println("		*You Shall Pass!");
+			println("Vous avez vaincu l'Arbre Jomo.");
+			println();
+		}
+
+		if(achoea==true)
+		{
+			println("		*Give this man an Oscar!");
+			println("Vous avez vaincu l'Ours en armure.");
+			println();
+		}
+
+		if(achdra==true)
+		{
+			println("		*Dovakhiin");
+			println("Vous avez vaincu le Dragon");
+			println();
+		}
+
+		if(achsash==true)
+		{
+			println("		*Yamete kudasai!");
+			println("Vous avez vaincu Sashimi.");
+			println();
+		}
+
+		if(achelf==true)
+		{
+			println("		*Anti-vegan");
+			println("Vous avez battu 10 elfes.");
+			println();
+		}
+
+		if(achpou==true)
+		{
+			println("		*Kentucky Fried Chicken");
+			println("Vous avez battu 10 poulets.");
+			println();
+		}
+
+		if(achguer==true)
+		{
+			println("		*Fak da police");
+			println("Vous avez battu un Garde.");
+			println();
+		}
+
+		if(achbarb==true)
+		{
+			println("		*Civilization!");
+			println("Vous avez battu 10 barbares.");
+			println();
+		}
+
+		if(achavent==true)
+		{
+			println("		*Et j'ai pris une flèche dans le genou...");
+			println("Vous avez battu 10 aventuriers.");
+			println();
+		}
+
+		println("Personnage :");
+		println();
+		println();
+		println();
+
+		if(achlillvl==true)
+		{
+			println("		*Plus un noob");
+			println("Vous avez dépassé le niveau 5.");
+			println();
+		}
+
+		if(achmidlvl==true)
+		{
+			println("		*Try-Harder");
+			println("Vous avez dépassé le niveau 10.");
+			println();
+		}
+
+		if(achgr8lvl==true)
+		{
+			println("		*Top FR");
+			println("Vous avez dépassé le niveau 15.");
+			println();
+		}
+
+		if(achalawak==true)
+		{
+			println("		*Starfoullah");
+			println("Vous avez acheté quelque chose à Alawak.");
+			println();
+		}
+		
+	}
+	
+
+	
+
+	
+}

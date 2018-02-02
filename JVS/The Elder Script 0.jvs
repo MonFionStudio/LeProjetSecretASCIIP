@@ -1,0 +1,1238 @@
+
+//Fonctions Affichage
+
+//Affichage personnage
+void afficherchara(int Chara[],String CharaS[])
+{
+	println("---------------------------");
+	println("Statistiques du personnage:");
+	println("---------------------------");
+	println(" ");
+	
+	for(int i=0; i<11; i++)
+	{		
+		println(CharaS[i]+" ");
+		println(Chara[i]+" ");
+	}
+
+}
+
+//Affichage Mob
+void affichermobs(int MOBS[][],String MOBSS[],int select)
+{
+	println("---------------------------");
+	println("Statistiques de l'adversaire:");
+	println("---------------------------");
+	println(" ");
+	
+	for(int j=1; j<9; j++)
+	{		
+		println(MOBSS[j]+" ");
+		println(MOBS[select][j]+" ");
+	}
+}
+
+
+//Programme principal
+void main()
+	{
+//Définition des MOBS		
+	
+	String[]MOBSS=new String[10];
+	MOBSS[1]="Vie";
+	MOBSS[2]="Armure";
+	MOBSS[3]="Dégâts Physiques";
+	MOBSS[4]="Dégâts Magiques";
+	MOBSS[5]="Armure Magique";
+	MOBSS[6]="Endurance";
+	MOBSS[7]="Mana";
+	MOBSS[8]="Or";
+	MOBSS[9]="Points d'expérience";
+
+
+//[1]vie [2]arm [3]degP [4]degM [5]ResM [6]Endu [7]Mana [8]Gold [9]exp
+		int[][]MOBS=new int[17][10];
+//Pou		
+		MOBS[1][1]=20;
+		MOBS[1][2]=0;
+		MOBS[1][3]=1;
+		MOBS[1][4]=0;
+		MOBS[1][5]=0;
+		MOBS[1][6]=1;
+		MOBS[1][7]=0;
+		MOBS[1][8]=10;
+		MOBS[1][9]=2;
+//MA		
+		MOBS[2][1]=75;
+		MOBS[2][2]=0;
+		MOBS[2][3]=2;
+		MOBS[2][4]=5;
+		MOBS[2][5]=10;
+		MOBS[2][6]=10;
+		MOBS[2][7]=20;
+		MOBS[2][8]=30;
+		MOBS[2][9]=10;
+//Elf		
+		MOBS[3][1]=75;
+		MOBS[3][2]=0;
+		MOBS[3][3]=5;
+		MOBS[3][4]=2;
+		MOBS[3][5]=10;
+		MOBS[3][6]=20;
+		MOBS[3][7]=10;
+		MOBS[3][8]=10;
+		MOBS[3][9]=10;
+//Guard		
+		MOBS[4][1]=200;
+		MOBS[4][2]=100;
+		MOBS[4][3]=10;
+		MOBS[4][4]=2;
+		MOBS[4][5]=50;
+		MOBS[4][6]=50;
+		MOBS[4][7]=20;
+		MOBS[4][8]=20;
+		MOBS[4][9]=50;
+//Jomo		
+		MOBS[5][1]=300;
+		MOBS[5][2]=40;
+		MOBS[5][3]=10;
+		MOBS[5][4]=10;
+		MOBS[5][5]=40;
+		MOBS[5][6]=50;
+		MOBS[5][7]=50;
+		MOBS[5][8]=20;
+		MOBS[5][9]=100;
+//Barbr		
+		MOBS[6][1]=150;
+		MOBS[6][2]=20;
+		MOBS[6][3]=20;
+		MOBS[6][4]=5;
+		MOBS[6][5]=10;
+		MOBS[6][6]=50;
+		MOBS[6][7]=10;
+		MOBS[6][8]=10;
+		MOBS[6][9]=50;
+//Sangl
+		MOBS[7][1]=200;
+		MOBS[7][2]=50;
+		MOBS[7][3]=10;
+		MOBS[7][4]=0;
+		MOBS[7][5]=0;
+		MOBS[7][6]=1;
+		MOBS[7][7]=0;
+		MOBS[7][8]=5;
+		MOBS[7][9]=20;
+//TrlMg
+		MOBS[8][1]=150;
+		MOBS[8][2]=20;
+		MOBS[8][3]=10;
+		MOBS[8][4]=20;
+		MOBS[8][5]=50;
+		MOBS[8][6]=10;
+		MOBS[8][7]=50;
+		MOBS[8][8]=10;
+		MOBS[8][9]=20;
+//Avent
+		MOBS[9][1]=200;
+		MOBS[9][2]=50;
+		MOBS[9][3]=15;
+		MOBS[9][4]=15;
+		MOBS[9][5]=50;
+		MOBS[9][6]=50;
+		MOBS[9][7]=50;
+		MOBS[9][8]=100;
+		MOBS[9][9]=20;
+//OurEnArm
+		MOBS[10][1]=400;
+		MOBS[10][2]=50;
+		MOBS[10][3]=30;
+		MOBS[10][4]=0;
+		MOBS[10][5]=10;
+		MOBS[10][6]=3;
+		MOBS[10][7]=0;
+		MOBS[10][8]=70;
+		MOBS[10][9]=200;
+//Palalol
+		MOBS[11][1]=300;
+		MOBS[11][2]=40;
+		MOBS[11][3]=40;
+		MOBS[11][4]=10;
+		MOBS[11][5]=20;
+		MOBS[11][6]=100;
+		MOBS[11][7]=20;
+		MOBS[11][8]=60;
+		MOBS[11][9]=100;
+//Nai
+		MOBS[12][1]=400;
+		MOBS[12][2]=100;
+		MOBS[12][3]=20;
+		MOBS[12][4]=5;
+		MOBS[12][5]=30;
+		MOBS[12][6]=50;
+		MOBS[12][7]=20;
+		MOBS[12][8]=20;
+		MOBS[12][9]=120;
+//PyrMag
+		MOBS[13][1]=200;
+		MOBS[13][2]=20;
+		MOBS[13][3]=5;
+		MOBS[13][4]=40;
+		MOBS[13][5]=75;
+		MOBS[13][6]=20;
+		MOBS[13][7]=100;
+		MOBS[13][8]=80;
+		MOBS[13][9]=80;
+//Arch
+		MOBS[14][1]=200;
+		MOBS[14][2]=20;
+		MOBS[14][3]=20;
+		MOBS[14][4]=20;
+		MOBS[14][5]=20;
+		MOBS[14][6]=50;
+		MOBS[14][7]=50;
+		MOBS[14][8]=30;
+		MOBS[14][9]=60;
+//Dradra
+		MOBS[15][1]=0;
+		MOBS[15][2]=42;
+		MOBS[15][3]=34;
+		MOBS[15][4]=69;
+		MOBS[15][5]=42;
+		MOBS[15][6]=46;
+		MOBS[15][7]=404;
+		MOBS[15][8]=110;
+		MOBS[15][9]=300;
+//Da mutherfckin SCRIPT
+		MOBS[16][1]=999;
+		MOBS[16][2]=999;
+		MOBS[16][3]=999;
+		MOBS[16][4]=999;
+		MOBS[16][5]=999;
+		MOBS[16][6]=999;
+		MOBS[16][7]=999;
+		MOBS[16][8]=0;
+		MOBS[16][9]=0;
+
+
+//Définition du personnage
+	String[]CharaS=new String[11];
+	CharaS[0]="Vie";
+	CharaS[1]="Mana";
+	CharaS[2]="Endurance";
+	CharaS[3]="Dégâts Physiques";
+	CharaS[4]="Dégâts Magiques";
+	CharaS[5]="Armure";
+	CharaS[6]="Armure Magique";
+	CharaS[7]="Or";
+	CharaS[8]="Expérience";
+	CharaS[9]="Expérience requise pour le prochain niveau";
+	CharaS[10]="Niveau";
+
+
+
+// [0] Vie; [1] Mana; [2] Endurance; [3] DégatsP; [4] DégatsM; [5] RésistanceP; [6] RésistanceM; [7]Gold; [8] Expérience; [9]ExpLimite; [10]Niveau.		
+		int[]Chara=new int[11];
+			Chara[0]=10;
+			Chara[1]=20;
+			Chara[2]=50;
+			Chara[3]=10;
+			Chara[4]=5;
+			Chara[5]=5;
+			Chara[6]=5;
+			Chara[7]=100;
+			Chara[8]=0;
+			Chara[9]=20;
+			Chara[10]=10;
+			for(int k=0;k<11;k++)
+				{
+					print(Chara[k]+" ");
+				}
+			println(" ");
+
+//Système de Level Up								
+			while(Chara[8]>=Chara[9])
+				{
+					int ExpTrop=Chara[8]-Chara[9];
+					Chara[8]=0+ExpTrop;
+					Chara[1]=Chara[1]+5;
+					Chara[0]=Chara[0]+10;
+					Chara[2]=Chara[2]+10;
+					Chara[3]=Chara[3]+1;
+					Chara[5]=Chara[5]+1;
+					Chara[6]=Chara[6]+1;
+					Chara[9]=Chara[9]+20;
+					Chara[10]=Chara[10]+1;
+					if ( (Chara[10] % 2) == 0) 
+						{
+     						Chara[4]=Chara[4]+1;
+						}	
+							println();
+
+			}
+
+	
+
+	afficherchara(Chara, CharaS);
+	println(" ");
+	println("---------------------------");
+	println(" ");
+
+	
+	int easter=0;
+
+	while(MOBS[16][1]>=0)
+	{
+
+	String choix = "lol";
+	int select=0;
+	int deplacement=0;
+
+	if(Chara[10]>=5 && MOBS[5][1]>0)
+	{
+		println("Voulez-vous *Affronter l'arbre Jomo* ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(Chara[10]>=10 && MOBS[10][1]>0)
+	{
+		println("Voulez-vous *Affronter l'ours en armure* ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(Chara[10]>=15 && MOBS[15][1]>0)
+	{
+		println("Voulez-vous *Affronter le dragon* ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(MOBS[15][1]==0 && MOBS[16][1]>0)
+	{
+		println("Voulez-vous *Affronter le boss caché* ou *Fuir*?");
+		choix = readString ();
+	}
+	
+	boolean jomo = equal(choix, "Affronter l'arbre Jomo");
+	boolean oea = equal(choix, "Affronter l'ours en armure");
+	boolean dra = equal(choix, "Affronter le dragon");
+	boolean bossf = equal(choix, "Affronter le boss caché");
+
+	if(jomo==true)
+	{
+		deplacement=1;
+		select=5;
+	}
+
+	if(oea==true)
+	{
+		deplacement=1;
+		select=10;
+	}
+
+	if(dra==true)
+	{
+		deplacement=1;
+		select=15;
+	}
+
+	if(bossf==true)
+	{
+		deplacement=1;
+		select=16;
+	}		
+	
+	if(select==4)
+	{
+		select=0;
+	}
+	
+	if(easter==1)
+	{
+		select=4;
+		deplacement=1;
+	}
+
+	if(bossf!=true && dra!=true && oea!=true && jomo!=true)
+	{
+		deplacement=0;
+	}
+	
+	while(deplacement==0)
+	{
+//Choix de la destination			
+	println("Entrer la destination:");
+	println(" ");
+	println("*Calem-Bourg");
+	println("*Bois Tard");
+	println("*Monts & Pics");
+	println("*Alawak's Bar");
+	String destination= readString();
+
+//Accès à la destination selon le choix et le niveau
+	boolean y = equal(destination, "Calem-Bourg");
+	boolean x = equal(destination, "Bois Tard");
+	boolean z = equal(destination, "Monts & Pics");
+	boolean a = equal(destination, "Alawak's Bar");
+
+//Accès au Calem-Bourg
+	if(y==true)
+	{
+	select= random (1, 4) ;
+	println(" ");
+	println("Vous allez à Calem-Bourg");
+	sleep(2000);
+	clear();
+	sleep(1000);
+	deplacement=1;
+	}
+
+//Accès au Bois Tard
+	if(x==true && MOBS[5][1]<=0)
+	{
+		if(Chara[10]>=5)
+		{
+		select= random (6, 10) ;
+		println(" ");
+		println("Vous allez au Bois Tard");
+		sleep(2000);
+		clear();
+		sleep(1000);
+		deplacement=1;	
+		}else{
+			println(" ");
+			println("Vous n'avez pas le niveau requis.");
+			sleep(2000);
+			clear();
+			sleep(1000);
+			deplacement=0;
+		}
+	
+	}
+
+//Accès aux Monts & Pics
+	if(z==true)
+	{
+		if(Chara[10]>=10 && MOBS[10][1]<=0)
+		{
+		select= random (11, 16) ;
+		println(" ");
+		println("Vous allez aux Monts & Pics");
+		sleep(2000);
+		clear();
+		sleep(1000);
+		deplacement=1;
+		}else{
+			println(" ");
+			println("Vous n'avez pas le niveau requis.");
+			sleep(2000);
+			clear();
+			sleep(1000);
+			deplacement=0;
+		}
+	}
+
+//Accès à l'Alawak's Bar
+	if(a==true)
+	{
+		println(" ");
+		println("Vous allez à l'Alawak's bar");
+		sleep(2000);
+		clear();
+		sleep(1000);
+		deplacement=2;
+	}
+
+//Erreur de destination
+	if(z!=true && y!=true && x!=true && a!=true)
+	{
+		println(" ");
+		println("Mauvaise destination");
+		sleep(2000);
+		clear();
+		sleep(1000);
+		deplacement=0;
+	}
+	}
+
+
+	if(deplacement==1)
+	{
+//Système de combat
+	//choisir de combattre ou non + bosss
+	int fuite=0;
+	
+	while(fuite==0)
+	{
+		
+	
+	if(select==1)
+	{
+		println("                   ,~.");
+		println("                ,-'__ `-,");
+		println("               {,-'  `. }              ,')");
+		println("              ,( a )   `-.__         ,',')~,");
+		println("             <=.) (         `-.__,==' ' ' '}");
+		println("               (   )                      /");
+		println("                `-'|   ,                  )");
+		println("                    |  |        `~.      /");
+		println("                    |   `._       |     /");
+		println("                     |     `._____,'   /");
+		println("                      `-.            ,'");
+		println("                         `-.      ,-'");
+		println("                            `~~~~'");
+		println("                            //_||");
+		println("                         __//--'/`");
+		println("                       ,--'/`  '");
+		println("                          '");
+		println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Kôkô! |");
+		println(" ");
+		println("*Affronter* le Poulet ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==2)
+	{
+	println("               _            _.,----,");
+ 	println("    __  _.-._ / '-.        -  ,.,'.\\)");
+ 	println("   |  `-)_   '-.  \\        /     - -} ");
+ 	println("   /__    '-.   \\   '-, ___(c-(6)=(6)");
+ 	println("    , `'.    `._ '.  _,'   >\\    '  |");
+ 	println("    :;;,,'-._   '---' (  ( '/`. -='/");
+ 	println("   ;:;;:;;,  '..__    ,`-.`)'- '--'");
+	println("   ;';:;;;;;'-._ /'._|   Y/   _/' \\");
+ 	println("         ''''._ F    |  _/ _.'._   `|");
+	println("                L   \\   \\/     '._ \\");
+	println("         .-,-,_ |     `.  `'---,  |_ _|");
+ 	println("         //    'L    /  \\   ('--',=`)7");
+ 	println("        | `._       : _,  |  /'`-._L,_'-._");
+ 	println("        '--' '-\\__/ _L   .`'         './/");
+ 	println("                    [ (  /");
+ 	println("                     ) `{");
+ 	println("                     |__)");
+ 		println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| C'est par où Azur? |");
+		println(" ");
+		println("*Affronter* l'Apprenti Magicien ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==3)
+	{
+			println(" ");
+		println("              ..-.--..");
+		println("            ,','.-`.-.`.");
+		println("           :.',;'     ` .");
+		println("           ||//----,-.---|");
+		println("         \\:|/-----`-'--||'/");
+		println("          \\|:  <a>  <a>|:'");
+		println("           `||     \\    |!");
+		println("           |!|          ;|");
+		println("           !||:.   --  /|!");
+		println("          /||!||:.___.|!|\\");
+		println("         /|!|||!|    |!||!\\:.");
+		println("      ,'//!||!||!`._.||!||,:\\");
+		println("     : :: |!|||!|    |!||! |!::");
+		println("     | |! !||!|||`---!|!|| ||!|");
+		println("    | || |!|||!|    |!||! |!|| ");
+		println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Un soleil rouge se lève, beaucoup de sang a dû couler cette nuit... |");
+		println(" ");
+		println("*Affronter* l'Elfe ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==4)
+	{
+	println("  /\\");
+	println("  ||");
+	println("  ||");
+	println("  ||           {}");
+	println("  ||          .--.");
+	println("  ||         /.--.\\");
+	println("  ||         |====|");
+	println("  ||         |`::`|");
+	println(" _||_    .-;`\\..../`;_.-^-._");
+	println("  /\\   /  |...::.. |`   :   `|");
+	println("  |:'\\ |   /'''::''|   .:.   |");
+	println("   \\ /\\;-,/\\   ::  |..:::::..|");
+	println("    \\ <` >  >._::_.| ':::::' |");
+	println("     `''`  /   ^^  |   ':'   |");
+	println("           |       \\    :    |");
+	println("           |        \\   :   / ");
+	println("           |___/\\___|`-.:.-`");
+	println("            \\_ || _/    ");
+	println("            <_ >< _>");
+	println("            |  ||  |");
+	println("            |  ||  |");
+	println("           _\\.:||:./_");
+	println("          /____/\\____\\");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Vous avez commis des crimes contre Calem-Bourg et ses habitants, qu'avez-vous à dire pour votre défense? |"); 
+		println(" ");
+		println("*Affronter* le Guarde ou *Payer l'amende*?");
+		choix = readString ();
+	}
+	
+	if(select==6)
+	{
+	println("                   /|");
+	println("    _______________)|..");
+	println("  <'______________<(,_|)");
+	println("             .((()))| ))");
+	println("             (======)|\\");
+	println("            ((( °_°()|_\\");
+	println("           '()))(_)|_/ ' )");
+	println("           .--/\\ /(  /./");
+	println("          /'._.-\\ .-(_/");
+	println("         / / \\___:___)");
+	println("        ( -.'.._  |  /");
+	println("         \\\\_| ( | )");
+	println("          '. /|)_(_)|");
+	println("            '-|  XX |");
+	println("             %%%%%%%%");
+	println("            / %%%%%%%|");
+	println("           ( /.-'%%%. |");
+	println("          /(.'   %%| :|");
+	println("         / ,|    %  ) )");
+	println("       _|___)   %  (__|_");
+	println("       )___/       )___(");
+	println("        |x/         \\>");
+	println("        |x)         / '.");
+	println("        |x\\      _(____''.__");
+	println("      -\\ -\\-");
+	println("       -\\__|- ");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Bulia? |");
+		println(" ");
+		println("*Affronter* le Barbare ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==7)
+	{
+	println("               _,-''''-..__");
+	println("          |`,-'_. `  ` ``  `--''''.");
+	println("          ;  ,'  | ``  ` `  ` ```  `.");
+	println("        ,-'   ..-' ` ` `` `  `` `  ` |==.");
+	println("      ,'    ^    `  `    `` `  ` `.  ;  \\");
+	println("     `}_,-^-   _ .  `\\ `  ` __ `   ;    #");
+	println("        `'---'' `-`. `\\---''`.`.  `;");
+	println("                   \\` ;       ; `. `,");
+	println("                    ||`;      / / | |");
+	println("                   //_;`    ,_;' ,_;'");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Oink! |");
+		println(" ");
+		println("*Affronter* le Sanglier ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==8)
+	{
+	println("      *                       *");
+	println("         *                      *");
+	println("        )        \\___//     (");
+	println("     * /(        \\(. .)     )' *");
+	println("       # )      c|   >'    ( #");
+	println("        '         )-_/      '");
+	println("      \\|,     ____| |__    ,|//");
+	println("       \\ )   ( `  ~    )  ( //");
+	println("       #\\ /  //| . ' .) \\ /#");
+	println("        |\\  // )   ,//\\  //|");
+	println("         \\,//;;,,;,;  \\,//");
+	println("           _,#;,;;,;,");
+	println("          /,i;;;,,;#,;");
+	println("         //  %;;,;,;;,;");
+	println("        ((    ;#;,;%;;,,");
+	println("       _//     ;,;; ,#;,");
+	println("      /_)      #,;    ))");
+	println("              //     \\|_");
+	println("              |_      |# ");
+	println("               |#\\     -' ");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Zag Zorg |");
+		println(" ");
+		println("*Affronter* le Troll Mage ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==9)
+	{
+	println("             (                 ~~~~~");
+	println("              )               (.,.)|");
+	println("             (  (              \\=__/");
+	println("                 )             ,'-'.");
+	println("           (    (  ,,      _.__|/ /|");
+	println("            ) /\\ -((------((_|___/ |");
+	println("          (  // | (`'      ((  `'--|");
+	println("        _ -.;_/ \\--._       \\\\ \\-._/.");
+	println("       (_;-// /\\\\\\-'.\\     <_,\\_\\`--'|");
+	println("       ( `.__ _  ___,')      <_,-'__,'");
+	println("        `'(_ )_)(_)_)'");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| J'adore le Bois Tard! |");
+		println(" ");
+		println("*Affronter* l'Aventurier ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==11)
+	{
+	println("                    _.--.    .--._");
+	println("                  .'  .'      '.  '.");
+	println("                 ;  .'    /\\    '.  ;");
+	println("                 ;  '._,-/  \\-,_.`  ;");
+	println("                 \\  ,`  / /\\ \\  `,  /");
+	println("                  \\/    \\/  \\/    \\/");
+	println("                  ,=_    \\/\\/    _=,");
+	println("                  |  '_   \\/   _'  |");
+	println("                  |_   ''-..-''   _|");
+	println("                  | '-.        .-' |");
+	println("                  |    '\\    /'    |");
+	println("                  |      |  |      |");
+	println("          ___     |      |  |      |");
+	println("      _,-',  ',   '_     |  |     _'   ,'  ,'-,_");
+	println("    _(  \\  \\   \\'=--'-.  |  |  .-'--='/   /  /  )_");
+	println("  ,'  \\  \\  \\   \\      '-'--'-'      /   /  /  /  '.");
+	println(" !     \\  \\  \\   \\                  /   /  /  /     !");
+	println(" |      \\  \\  \\   \\                /   /  /  /      |");
+	println(" ");	
+		affichermobs(MOBS, MOBSS, select);
+		println("| Comment veux-tu mourir? |");
+		println(" ");
+		println("*Affronter* le Paladin de l'inquisition ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==12)
+	{
+	println("                                   ___I___");
+	println("                                  /=  |  #\\");
+	println("                                 /.__-| __ \\");
+	println("                                 |/__\\ /__\\|");
+	println("                                 (( o| |o ))");
+	println("                              __ ((()))))()) __");
+	println("                            ,'  |()))))(((()|# `.");
+	println("                           /    |^))()))))(^|   =\\");
+	println("                          /    /^v^(())()()v^\\'  .\\");
+	println("                         |__.'^v^v^))))))^v^v`.__|");
+	println("                         /_ ' \\______(()_____(   |");
+	println("                     _..-'   _//_____[xxx]_____\\.-|");
+	println("                    /,_#\\.=-' /v^v^v^v^v^v^v^v^| _|");
+	println("                    \\)|)      v^v^v^v^v^v^v^v^v| _|");
+	println("                     ||       :v^v^v^v^v^v`.-' |#  \\,");
+	println("                     ||       v^v^v^v`_/\\__,--.|\\_=_/");
+	println("                     ><       :v^v____|  \\_____|_");
+	println("                  ,  ||       v^      /  \\       /");
+	println("                 //\\_||_)\\    `/_..-._\\   )_...__\\");
+	println("                 ||   \\/  |     |_='_(     |  =_(_");
+	println("                 ||  _/\\_ |    /     =\\    /  '  =\\");
+	println("                 \\/ \\/ )/     |=____#|    '=....#|");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Salut, chui l'nain! |");
+		println(" ");
+		println("*Affronter* le nain ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==13)
+	{
+	println("                         '   .   ' .   _____  '    .      .");
+	println("                          .     .   .mMMMMMMMm.  '  o  '   .");
+	println("                        '   .     .MMXXXXXXXXXMM.    .   ' ");
+	println("                       .       .//XX77:::::::77XX\\.   .   .");
+	println("                          o  .  ;X7:::''''''':::7X;   .  '");
+	println("                         '    . |::'.:'        '::| .   .  .");
+	println("                            .   ;:.:.            :;. o   .");
+	println("                         '     . \'.:            /.    '   .");
+	println("                            .     `.':.        .'.  '    .");
+	println("                          '   . '  .`-._____.-'   .  . '  .");
+	println("                           ' o   '  .   O   .   '  o    '");
+	println("                            . ' .  ' . '  ' O   . '  '   '");
+	println("                             . .   '    '  .  '   . '  '");
+	println("                              . .'..' . ' ' . . '.  . '");
+	println("                               `.':.'        ':'.'.'");
+	println("                                 `\\_  |    _//'");
+	println("                                  \\(  |\\   )/");
+	println("                                   /\\ |_\\ /\\");
+	println("                                  (/ /('')/| \\)");
+	println("                                   \\/|(  ) |\\/");
+	println("                                      |(  )|");
+	println("                                      | )( \\");
+	println("                                      |  )  \\");
+	println("                                      |      \\");
+	println("                                      |       \\");
+	println("                                      |        `.__,");
+	println("                                     \\_________.-'");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| La pluie ça mouille, j'aime pas ça... |");
+		println(" ");
+		println("*Affronter* le Pyromage ou *Fuir*?");
+		choix = readString ();
+	}
+
+	if(select==14)
+	{
+	println("       __                          /                  `|.");
+	println("        -\\                        /                     |.");
+	println("          \\                      /                       |.");
+	println("            \\                   /                         |.");
+	println("             \\|                /                           |\\");
+	println("               \\#####\\        /                             ||");
+	println("           ==###########>    /                               ||");
+	println("            \\##==      \\    /                                 ||");
+	println("       ______ =       =|__/___                                ||");
+	println("   ,--' ,----`-,__ ___/'  --,-`-==============================##==========>");
+	println("  \\               '        ##_______ ______   ______,--,____,=##,__");
+	println("   `,    __==    ___,-,__,--'#'  ==='      `-'              | ##,-/");
+	println("     `-,____,---'       \\####\\              |        ____,--\\_##,/");
+	println("         #_              |##   \\  _____,---==,__,---'         ##");
+	println("          #              ]===--==\\                            ||");
+	println("          #,             ]         \\                          ||");
+	println("           #_            |           \\                        ||");
+	println("            ##_       __/'             \\                      ||");
+	println("             ####='     |                \\                    |/");
+	println("              ###       |                  \\                  |.");
+	println("              ##       _'                    \\                |.");
+	println("             ###=======]                       \\              |.");
+	println("            ///        |                         \\           ,|.");
+	println("            //         |                           \\         |.");
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Préparez-vous, je bande! |");
+		println(" ");
+		println("*Affronter* l'Archer ou *Fuir*?");
+		choix = readString ();
+	}
+
+	
+
+	if(select==5)
+	{
+	println("             .        +          .      .          .");
+	println("      .            _        .                    .");
+	println("   ,              /;-._,-.____        ,-----.__");
+	println("            .    (_:#::_.:::. `-._   /:, /-._, `._,");
+	println("   `                 \\  _|`'=:_::.`.);  \\__/ /");
+	println("                       ,    `./ \\:. `.   )==-'  .");
+	println("     .      ., ,-=-.  \\, +#./`  \\:.  / /           .");
+	println(" .          \\/:/`-' , \\ '` ` `   ): , /_  -o");
+	println("        .    /:+- - + +- : :- + + -:'  /(o-)\\)     .");
+	println("   .      ,=':  \\   ` `/` ' , , ,:' `'--'.--'---._/`7");
+	println("    `.   (    \\ \\-._` ` + \\, ,'   _,--._,---':.__/");
+	println("               \\  `  X` _| _\\/'   .-'");
+	println(" .                :._:\\____  /:'  /      .           .");
+	println("                     \\:.  \\/:'  /              +");
+	println("    .                 `.:.  /:'  }      .");
+	println("            .           ):__:; __|           .");
+	println("                       /:.(•) (•)|");
+	println("                    . (|::.  |  ,`                  .");
+	println("      .                |::. ___ \\");
+	println("                       |::.\\ \\`.");
+	println("                       |:::(\\   |");
+	println("               O       |:::/{ }  |                  (o");
+	println("                )  ___/#\\::`/ (O '==._____   O,  O  /`");
+	println("           ~~~w/w~'~~,\\ `:/,-(~`'~~~~~~~~'~o\\~/~w|/~");
+	println("    ~~~~~~~~~~~~~~~~~~~~~~~\\W~~~~~~~~~~~\\|/~~");	
+	println(" ");
+		affichermobs(MOBS, MOBSS, select);
+		println("| Vous ne passerez pas! |");
+		println("L'Arbre Jomo bloque la route vers le Bois Tard, vous devez le battre pour passer!");
+		fuite=0;
+	}
+
+	if(select==10)
+	{
+	println("  .'''.        ___,,,___        .'``.");
+	println(" : (|  `.'''```         ```'''-'  |) ;");
+	println("  :  \\                        `.// .'");
+	println("   `.                            :.'");
+	println("    /         _         _        \\");
+	println("    |         0}       {0         |");
+	println("    |         /         \\        |");
+	println("    |        /           \\       |");
+	println("    |       /             \\      |");
+	println("     \\     |     .-.       |    /");
+	println("      `.    |. . // \\ . . |  .'");
+	println("        `-._\\'.(     ).' /_.-'");
+	println("            `\'  `._.'  '/'");
+	println("              `. --'-- .'");
+	println("                `-...-'");
+	println(" ");		
+		affichermobs(MOBS, MOBSS, select);
+		println("| Roar! |");
+		println("Un Ours en armure bloque l'accès aux Monts & Pics, vous de vez le battre pour passer!");
+		fuite=0;
+	}
+
+	if(select==15)
+	{
+	println("                   ___====-_  _-====___");
+	println("             _--^^^#####//      \\#####^^^--_");
+	println("          _-^##########//(    ) \\##########^-_");
+	println("         -############// |\\^^/|  \\############-");
+	println("       _/############//  (@::@)   \\############\\_");
+	println("      /#############((    \\ /     ))#############\\");
+	println("     -###############\\    (oo)    //###############-");
+	println("    -#################\\  / VV \\  //#################-");
+	println("   -###################\\/      \\//###################-");
+	println(" _#/|##########/\\######(   /\\   )######/\\##########|\\#_");
+	println(" |/ |#/\\#/\\#/\\/  \\#/\\##\\  |  |  /##/\\#/  \\/\\#/\\#/\\#| \\|");
+	println(" `  |/  V  V  `   V  \\#\\| |  | |/#/  V   '  V  V  \\|  '");
+	println("    `   `  `      `   / | |  | | \\   '      '  '   '");
+	println("                     (  | |  | |  )");
+	println("                    __\\ | |  | | /__");
+	println("                   (vvv(VVV)(VVV)vvv)");
+	println(" ");	
+		affichermobs(MOBS, MOBSS, select);
+		println("| Fus Ro Dah!");
+		println("Battez le dragon.");
+		fuite=0;
+	}
+
+	if(select==16)
+	{
+	println("             .-.---------------------------------.-.");
+	println("            ((o))                                   )");
+	println("            \\U/_______          _____         ____/");
+	println("              |                             	 |");
+	println("              |                             	 |");
+	println("   	      |   __  ____ _____ __ _____ _____  |");
+	println("   	      |  ((  ((    ||_// || ||_//  ||    |");
+	println("   	      |   _))((__ || \\   || ||     ||    |");
+	println("              |                                  |");
+	println("              |                                  |");
+	println("              |                                  |");
+	println("              |____    _______    __  ____    ___|");
+	println("             /A\\                                 \\");
+	println("            ((o))                                  )");
+	println("             '-'----------------------------------'");	
+	println(" ");	
+		affichermobs(MOBS, MOBSS, select);
+		println("| Muahahahahah! |");
+		println("Détruisez le Script!");
+		fuite=0;
+	}	
+
+	sleep(2000);
+	clear();
+	sleep(2000);
+
+	boolean affronter = equal(choix, "Affronter");
+	boolean fuir = equal(choix, "Fuir");
+	boolean amende = equal(choix, "Payer l'amende");
+	
+	if(fuir==true)
+	{
+		println("Vous partez en courant.");
+		fuite=1;
+	}
+
+	if(amende==true)
+	{
+		println("Vous payez 10 pièces d'or d'amende");
+		Chara[7]=Chara[7]-10;
+		fuite=1;
+	}
+	
+	if(affronter==true)
+	{
+		fuite=0;
+	}
+
+	if(affronter!=true && amende!=true && fuir!=true && jomo!=true && oea!=true && dra!=true && bossf!=true)
+	{
+		println("Mauvaise action");
+		fuite=1;
+	}
+		
+//Combat	
+	int VieC=Chara[0];
+	int VieM= MOBS[select][1];
+	
+	
+	while(MOBS[select][1]>0 && fuite==0)
+	{
+
+	int action=0;
+	int actionM=0;
+
+//Choix de l'attaque
+		if(action==0)
+		{
+		while(action==0)
+		{
+		afficherchara(Chara, CharaS);	
+		println(" ");
+		println("Choisir attaque:");
+		println("*Coup d'épée*");
+		println("*Coup d'épée puissant*");
+		println("*Hado Ken*");
+		println("*Mass sparks*");
+		println("*Fuite*");				
+		String attaque= readString();
+
+		boolean phys1 = equal(attaque, "Coup d'épée");
+		boolean phys2 = equal(attaque, "Coup d'épée puissant");
+		boolean mag1 = equal(attaque, "Hado Ken");
+		boolean mag2 = equal(attaque, "Mass sparks");
+		boolean esc = equal(attaque, "Fuite");
+		
+//Attaque physique basique	
+		if(phys1 == true)
+		{
+			double degatsPchara=Chara[3]*((MOBS[select][2]+100)/100);
+			int absorptionPMobs=(int)(degatsPchara);
+			MOBS[select][1]=MOBS[select][1]-absorptionPMobs;
+			Chara[2]=Chara[2]-1;
+			action=1;
+		}
+
+//Attaque physique puissante	
+		if(phys2 == true && Chara[2]>=5)
+		{
+			double degatsPchara=Chara[3]*((MOBS[select][2]+100)/100);
+			int absorptionPMobs=(int)(degatsPchara);
+			MOBS[select][1]=MOBS[select][1]-(absorptionPMobs*2);
+			Chara[2]=Chara[2]-5;
+			action=1;
+		}
+
+//Attaque magique basique	
+		if(mag1 == true)
+		{
+			double degatsMchara=Chara[4]*((MOBS[select][5]+100)/100);
+			int absorptionMMobs=(int)(degatsMchara);
+			MOBS[select][1]=MOBS[select][1]-absorptionMMobs;
+			Chara[1]=Chara[1]-1;
+			action=2;
+		}
+
+//Attaque magique puissante	
+		if(mag2 == true && Chara[1]>=5)
+		{
+			double degatsMchara=Chara[4]*((MOBS[select][5]+100)/100);
+			int absorptionMMobs=(int)(degatsMchara);
+			MOBS[select][1]=MOBS[select][1]-(absorptionMMobs*2);
+			Chara[1]=Chara[1]-5;
+			action=2;
+		}
+
+//Fuite
+		if(esc==true)
+		{
+			println("Vous fuyez.");
+			fuite=1;
+			action=2;
+		}
+
+//Manque d'endurance
+		if(phys2==true && Chara[2]<5)
+		{
+			println("Vous n'avez pas assez d'endurance.");
+			action=0;
+		}
+
+//Manque de mana
+		if(phys2==true && Chara[1]<5)
+		{
+			println("Vous n'avez pas assez de mana.");
+			action=0;
+		}
+		
+//Erreur d'attaque	
+		if(phys1!=true && phys2!=true && mag1!=true && mag2!=true && esc!=true)
+		{
+			println("Mauvaise attaque");
+			action=0;
+		}			
+		}
+		}
+//Régénération de l'endurance et de la mana		
+
+		if(action==1)
+		{
+		Chara[1]=Chara[1]+1;
+		}else{
+		Chara[2]=Chara[2]+1;
+		}
+
+		sleep(2000);
+		clear();
+		sleep(2000);
+
+//1ttaque de l'adversaire
+		if(action==1 || action==2)
+		{
+		affichermobs(MOBS, MOBSS, select);
+			while(actionM==0)
+			{
+				int attaqueM;
+				if(MOBS[select][7]!=0)
+				{
+					if(MOBS[select][6]>(MOBS[select][7]+20))
+					{
+						attaqueM = 1;
+					}else{
+						attaqueM = random(1,3);
+					}
+
+					if(MOBS[select][7]>(MOBS[select][6]+20))
+					{
+						attaqueM = 2;
+					}else{
+						attaqueM = random(1,3);
+					}
+					
+				}else{
+					attaqueM=1;
+				}
+				
+//Attaque physique de l'adversaire				
+				if(attaqueM == 1)
+				{
+					double degatsPmob=MOBS[select][3]*((Chara[5]+100)/100);
+					int absorptionPchara=(int)(degatsPmob);
+					Chara[0]=Chara[0]-absorptionPchara;
+					actionM=1;
+				}
+
+//Attaque magique de l'adversaire
+				if(attaqueM == 2)
+				{
+					double degatsMmob=MOBS[select][4]*((Chara[6]+100)/100);
+					int absorptionMchara=(int)(degatsMmob);
+					Chara[0]=Chara[0]-absorptionMchara;
+					actionM=1;
+				}
+			}
+		}
+//Vaincu par l'adversaire
+			if(Chara[0]<=0)
+			{
+			println("                                            .''--.._");
+	println("                                            []      `'--.._");
+	println("                                            ||__           `'-,");
+	println("                                          `)||_ ```'--..       \\");
+	println("                      _                    /|//}        ``--._  |");
+	println("                   .'` `'.                /////}              `\\/");
+	println("                  /  .'''.\\              //{///");
+	println("                 /  /_  _`\\            // `||");
+	println("                 | |(_)(_)||          _//   ||");
+	println("                 | |  /\\  )|        _///\\   ||");
+	println("                 | |L====J |       / |/ |   ||");
+	println("                /  /'-..-' /    .'`  \\  |   ||");
+	println("               /   |  :: | |_.-`      |  \\  ||");
+	println("              /|   `\\-::.| |          \\   | ||");
+	println("            /` `|   /    | |          |   / ||");
+	println("          |`    \\   |    / /          \\  |  ||");
+	println("         |       `\\_|    |/      ,.__. \\ |  ||");
+	println("         /                     /`    `\\ ||  ||");
+	println("        |           .         /        \\||  ||");
+	println("        |                     |         |/  ||");
+	println("        /         /           |         (   ||");
+	println("       /          .           /          )  ||");
+	println("      |            \\          |             ||");
+	println("     /             |          /             ||");
+	println("    |\\            /          |              ||");
+	println("    \\ `-._       |           /              ||");
+	println("     \\ ,//`\\    /`           |              ||");
+	println("      ///\\  \\  |             \\              ||");
+	println("     |||| ) |__/             |              ||");
+	println("     |||| `.(                |              ||");
+	println("     `\\\\` /`                 /              ||");
+	println("        /`                   /              ||");
+	println("       /                     |              ||");
+	println("      |                      \\              ||");
+	println("     /                        |             ||");
+	println("   /`                          \\            ||");
+	println(" /`                            |            ||");
+	println(" `-.___,-.      .-.        ___,'            ||");
+	println("          `---'`   `'----'`");
+	println(" ");
+	fuite=1;	
+				
+			if(select<=5)
+				{
+				println("Vous avez été vaincu, vous perdez 20 pièces d'or!");
+				Chara[7]=Chara[7]-20;
+			}
+
+			if(select<=10 && select>=6)
+			{
+				println("Vous avez été vaincu, vous perdez 40 pièces d'or!");
+				Chara[7]=Chara[7]-40;
+			}
+
+			if(select<=16 && select>=11)
+			{
+				println("Vous avez été vaincu, vous perdez 60 pièces d'or!");
+				Chara[7]=Chara[7]-60;
+			}
+			}
+		
+
+		}
+//Adversaire vaincu
+
+	if(MOBS[select][1]<=0)
+	{
+		println("Vous avez battu votre adversaire, vous obtenez "+MOBS[select][8]+" pièces d'or et "+MOBS[select][9]+" points d'expérience.");
+		Chara[7]=Chara[7]+MOBS[select][8];
+		Chara[8]=Chara[8]+MOBS[select][9];
+		Chara[0]= VieC;
+		fuite=1;
+	}
+
+	
+
+
+
+//Easter egg Poulet/Garde
+	if(MOBS[select][1]<=0)
+	{
+		easter=1;
+	}else{
+		easter=0;
+	}
+
+//Fin easter
+
+	if(select!=5 && select!=10 && select!=15 && select!=16)
+	{
+	MOBS[select][1] = VieM;
+	}
+
+//Bosss vaincus
+	if(select==5 && MOBS[5][1]<=0)
+	{
+		println("Maintenant que l'Arbre Jomo a été vaincu, vous pouvez accèder au Bois tard.");
+	}
+
+	if(select==10 && MOBS[10][1]<=0)
+	{
+		println("Maintenant que l'Ours en armure a été vaincu, vous pouvez accèder aux Monts & Pics.");
+	}
+
+	if(select==15 && MOBS[15][1]<=0)
+	{
+		println("Le Dragon a été vaincu, il reste un enemi à battre...");
+	}
+
+	if(select==16 && MOBS[16][1]<=0)
+	{
+		println("Error 404 - Script not found.");
+	}	
+	}
+	}	
+	}
+	}

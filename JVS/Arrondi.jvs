@@ -1,0 +1,45 @@
+
+void main()
+{
+int[]Chara=new int[11];
+			Chara[0]=100;
+			Chara[1]=20;
+			Chara[2]=50;
+			Chara[3]=10;
+			Chara[4]=5;
+			Chara[5]=5;
+			Chara[6]=100;
+			Chara[7]=100;
+			Chara[8]=200;
+			Chara[9]=50;
+			Chara[10]=1;
+
+ int select=3;
+	int[][]MOBS=new int[17][10];
+		MOBS[3][1]=75;
+		MOBS[3][2]=0;
+		MOBS[3][3]=5;
+		MOBS[3][4]=2;
+		MOBS[3][5]=10;
+		MOBS[3][6]=20;
+		MOBS[3][7]=10;
+		MOBS[3][8]=10;
+		MOBS[3][9]=10;
+
+	double degatsPchara=Chara[3]*((MOBS[select][2]+100)/100);
+	int absorptionPMobs=(int)(degatsPchara);
+	println(absorptionPMobs);
+
+	double degatsMchara=Chara[4]*((MOBS[select][5]+1)/100);
+	int absorptionMMobs=(int)(degatsMchara);
+	println(absorptionPMobs);
+
+	double degatsPmob=MOBS[select][3]*((Chara[5]+1)/100);
+	int absorptionPchara=(int)(degatsPmob);
+	println(absorptionPchara);
+
+	double degatsMmob=MOBS[select][4]*((Chara[6]+1)/100);
+	println(degatsMmob);
+	int absorptionMchara=(int)(degatsMmob);
+	println(absorptionMchara);
+}

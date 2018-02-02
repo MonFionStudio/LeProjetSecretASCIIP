@@ -1,0 +1,73 @@
+
+ void LevelUp(int Exp, int Mana, int Vie, int ExpLimite, int Endurance, int DegatsP, int DegatsM, int RP, int RM, int Niveau)
+	{
+		
+		Exp=0;		
+		Mana=Mana+5;
+		Vie=Vie+10;
+		Endurance=Endurance+10;
+		DegatsP=DegatsP+1;
+		RP=RP+1;
+		RM=RM+1;
+		ExpLimite=ExpLimite+50;
+		if ( (Niveau % 2) == 0) 
+			{
+     			DegatsM=DegatsM+1;
+			}		
+				
+			
+		println();		
+		print(Vie+" "+Mana+" "+Endurance+" "+DegatsP+" "+DegatsM+" "+RP+" "+RM+" "+"100"+" "+Exp+" "+ExpLimite);	
+		
+			
+	}
+
+void main()
+	{
+		// [0] Vie; [1] Mana; [2] Endurance; [3] DégatsP; [4] DégatsM; [5] RésistanceP; [6] RésistanceM; [7]Gold; [8] Expérience; [9]ExpLimite; [10]Niveau.		
+		int[]Chara=new int[11];
+			Chara[0]=100;
+			Chara[1]=20;
+			Chara[2]=50;
+			Chara[3]=10;
+			Chara[4]=5;
+			Chara[5]=5;
+			Chara[6]=5;
+			Chara[7]=100;
+			Chara[8]=200;
+			Chara[9]=50;
+			Chara[10]=1;
+			for(int k=0;k<10;k++)
+				{
+					print(Chara[k]+" ");
+				}
+			if(Chara[8]>=Chara[9])
+				{
+					LevelUp(Chara[8],Chara[1],Chara[0],Chara[9],Chara[2],Chara[3],Chara[4],Chara[5],Chara[6],Chara[10]);
+				}
+			println();
+			for(int k=0;k<10;k++)
+				{
+					print(Chara[k]+" ");
+				}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

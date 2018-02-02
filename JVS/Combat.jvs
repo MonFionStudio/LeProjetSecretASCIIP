@@ -1,0 +1,437 @@
+
+	String[]CharaS=new String[11];
+	CharaS[0]="Vie";
+	CharaS[1]="Mana";
+	CharaS[2]="Endurance";
+	CharaS[3]="Dégâts Physiques";
+	CharaS[4]="Dégâts Magiques";
+	CharaS[5]="Armure";
+	CharaS[6]="Armure Magique";
+	CharaS[7]="Or";
+	CharaS[8]="Expérience";
+	CharaS[9]=" ";
+	CharaS[10]="Niveau";
+
+	String[]MOBSS=new String[10];
+	MOBSS[1]="Vie";
+	MOBSS[2]="Armure";
+	MOBSS[3]="Dégâts Physiques";
+	MOBSS[4]="Dégâts Magiques";
+	MOBSS[5]="Armure Magique";
+	MOBSS[6]="Endurance";
+	MOBSS[7]="Mana";
+	MOBSS[8]="Or";
+	MOBSS[9]="Points d'expérience";
+	
+//choisir de combattre ou non + bosss
+	int fuite=2;
+	
+	while(fuite==2)
+	{
+	if(Chara[10]>=5 && MOBS[5][1]!=0)
+	{
+		println("Voulez-vous *Affronter l'arbre Jomo* ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(Chara[10]>=10 && MOBS[10][1]!=0)
+	{
+		println("Voulez-vous *Affronter l'ours en armure* ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(Chara[10]>=15 && MOBS[15][1]!=0)
+	{
+		println("Voulez-vous *Affronter le dragon* ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(MOBS[15][1]==0 && MOBS[16][1]!=0)
+	{
+		println("Voulez-vous *Affronter le boss caché* ou *Fuir*?");
+		String choix = readString ();
+	}	
+	
+	if(select==1)
+	{
+		//Affichage ASCII
+		println("| Kôkô! |");
+		println(" ");
+		println("*Affronter* le Poulet ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==2)
+	{
+		//Affichage ASCII
+		println("| C'est par où Azur? |");
+		println(" ");
+		println("*Affronter* l'Apprenti Magicien ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==3)
+	{
+		//Affichage ASCII
+		println("| J'aime sentir le vent dans mes cheveux! |");
+		println(" ");
+		println("*Affronter* l'Elfe ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==4)
+	{
+		//Affichage ASCII
+		println("| Vous avez commis des crimes contre Calem-Bourg et ses habitants, qu'avez-vous à dire pour votre défense? |"); 
+		println(" ");
+		println("*Affronter* le Guarde ou *Payer l'amende*?");
+		String choix = readString ();
+	}
+	
+	if(select==6)
+	{
+		//Affichage ASCII
+		println("| Bruh? |");
+		println(" ");
+		println("*Affronter* le Barbare ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==7)
+	{
+		//Affichage ASCII
+		println("| Oink! |");
+		println(" ");
+		println("*Affronter* le Sanglier ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==8)
+	{
+		//Affichage ASCII
+		println("| Zag Zorg |");
+		println(" ");
+		println("*Affronter* le Troll Mage ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==9)
+	{
+		//Affichage ASCII
+		println("|  |");
+		println(" ");
+		println("*Affronter* l'Aventurier ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==11)
+	{
+		//Affichage ASCII
+		println("| Comment veux-tu mourir? |");
+		println(" ");
+		println("*Affronter* le Paladin de l'inquisition ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==12)
+	{
+		//Affichage ASCII
+		println("| Salut, chui l'nain! |");
+		println(" ");
+		println("*Affronter* le nain ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==13)
+	{
+		//Affichage ASCII
+		println("|  |");
+		println(" ");
+		println("*Affronter* le Pyromage ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	if(select==14)
+	{
+		//Affichage ASCII
+		println("|  |");
+		println(" ");
+		println("*Affronter* l'Archer ou *Fuir*?");
+		String choix = readString ();
+	}
+
+	boolean affronter = equal(choix, "Affronter");
+	boolean fuir = equal(choix, "Fuir");
+	boolean amende = equal(choix, "Payer l'amende");
+	boolean jomo = equal(choix, "Affronter l'arbre Jomo");
+	boolean oea = equal(choix, "Affronter l'ours en armure");
+	boolean dra = equal(choix, "Affronter le dragon");
+	boolean bossc = equal(choix, "Affronter le boss caché");
+
+	if(jomo==true)
+	{
+		fuite=0;
+		select=5;
+	}
+
+	if(oea==true)
+	{
+		fuite=0;
+		select=10;
+	}
+
+	if(dra==true)
+	{
+		fuite=0;
+		select=15;
+	}
+
+	if(bossc==true)
+	{
+		fuite=0;
+		select=16;
+	}		
+	
+	if(fuir==true)
+	{
+		println("Vous partez en courant.");
+		fuite=1;
+	}
+
+	if(amende==true)
+	{
+		println("Vous payez 10 pièces d'or d'amende");
+		Chara[7]=Chara[7]-10;
+		fuite=1;
+	}
+	
+	if(affronter==true)
+	{
+		fuite=0;
+	}
+
+	if(affronter!=true && amende!=true && fuir!=true && bossf!=true && dra!=true && oea!=true && jomo!=true)
+	{
+		println("Mauvaise action");
+		fuite=2;
+	}
+
+	if(select==5)
+	{
+//Affichage ASCII		
+		println("| Wololo |");
+		println("L'Arbre Jomo bloque la route vers le Bois Tard, vous devez le battre pour passer!");
+		fuite=0;
+	}
+
+	if(select==10)
+	{
+//Affichage ASCII		
+		println("| Roar! |");
+		println("Un Ours en armure bloque l'accès aux Monts & Pics, vous de vez le battre pour passer!");
+		fuite=0;
+	}
+
+	if(select==15)
+	{
+//Affichage ASCII		
+		println("| Fus Ro Dah!");
+		println("Battez le dragon.");
+		fuite=0;
+	}
+
+	if(select==16)
+	{
+//Affichage ASCII	
+		println("| Muahahahahah! |");
+		println("Détruisez le Script!");
+		fuite=0;
+	}	
+	}	
+		
+//Combat	
+	while(fuite==0)
+	{
+	while(MOBS[select][1]!=0 || fuite==0)
+	{
+	int VieC=Chara[0];
+	int VieM= MOBS[select][1];
+
+	int action=0;
+	int actionM=0;
+
+//Choix de l'attaque
+		if(action==0)
+		{
+		while(action==0)
+		{
+		println("Choisir attaque:");
+		println("*Coup d'épée*");
+		println("*Coup d'épée puissant*");
+		println("*Hado Ken*");
+		println("*Mass sparks*");
+		println("*Fuite*");				
+		String attaque= readString();
+
+		boolean phys1 = equal(attaque, "Coup d'épée");
+		boolean phys2 = equal(attaque, "Coup d'épée puissant");
+		boolean mag1 = equal(attaque, "Hado Ken");
+		boolean mag2 = equal(attaque, "Mass sparks");
+		boolean esc = equal(attaque, "Fuite");
+
+//Attaque physique basique	
+		if(phys1 == true)
+		{
+			MOBS[select][1]=MOBS[select][1]-(Chara[4]*(1-(MOBS[select][2]/1000));
+			Chara[2]=Chara[2]-1;
+			action=1;
+		}
+
+//Attaque physique puissante	
+		if(phys2 == true && Chara[2]>=5)
+		{
+			MOBS[select][1]=MOBS[select][1]-(Chara[4]*2)*(1-(MOBS[select][2]/1000));
+			Chara[2]=Chara[2]-5;
+			action=1;
+		}
+
+//Attaque magique basique	
+		if(mag1 == true)
+		{
+			MOBS[select][1]=MOBS[select][1]-(Chara[3]*(1-(MOBS[select][5]/1000));
+			Chara[1]=Chara[1]-1;
+			action=1;
+		}
+
+//Attaque magique puissante	
+		if(mag2 == true && Chara[1]>=5)
+		{
+			MOBS[select][1]=MOBS[select][1]-((Chara[3]*2)*(1-(MOBS[select][5]/1000));
+			Chara[1]=Chara[1]-5;
+			action=1;
+		}
+
+//Fuite
+		if(esc==true)
+		{
+			fuite=1;
+		}
+
+//Manque d'endurance
+		if(phys2==true && Chara[2]<5)
+		{
+			println("Vous n'avez pas assez d'endurance.");
+			action=0;
+		}
+
+//Manque de mana
+		if(phys2==true && Chara[1]<5)
+		{
+			println("Vous n'avez pas assez de mana.");
+			action=0;
+		}
+		
+//Erreur d'attaque	
+		if(phys1!=true && phys2!=true && mag1!=true && mag2!=true)
+		{
+			println("Mauvaise attaque");
+			action=0;
+		}			
+		}
+		}
+//Régénération de l'endurance et de la mana		
+		Chara[1]=Chara[1]+1;
+		Chara[2]=Chara[2]+1;
+
+//1ttaque de l'adversaire
+		if(action==1)
+		{
+			while(actionM=0)
+			{
+				if(MOBS[select][7]!=0)
+				{
+					int attaqueM = random(1;3);
+				}else{
+					attaqueM=1;
+				}
+				
+//Attaque physique de l'adversaire				
+				if(attaqueM == 1)
+				{
+					Chara[0]=Chara[0]-(MOBS[select][3]*(1-(Chara[5]/1000));
+					actionM=1;
+				}
+
+//Attaque magique de l'adversaire
+				if(attaqueM == 2)
+				{
+					Chara[0]=Chara[0]-(MOBS[select][4]*(1-(Chara[6]));
+					actionM=1;
+				}
+			}
+
+//Vaincu par l'adversaire
+			if(Chara[0]<=0 && select<=4)
+			{
+				println("Vous avez été vaincu, vous perdez 20 pièces d'or!");
+				Chara[7]=Chara[7]-20;
+				int fuite=1;
+			}
+
+			if(Chara[0]<=0 && select<=9 && select>=6)
+			{
+				println("Vous avez été vaincu, vous perdez 40 pièces d'or!");
+				Chara[7]=Chara[7]-40;
+				int fuite=1;
+			}
+
+			if(Chara[0]<=0 && select<=14 && select>=11)
+			{
+				println("Vous avez été vaincu, vous perdez 60 pièces d'or!");
+				Chara[7]=Chara[7]-60;
+				int fuite=1;
+			}
+		}
+
+	}
+
+//Adversaire vaincu
+	Println("Vous avez battu votre adversaire, vous obtenez "+MOBS[select][8]+" pièces d'or et "+MOBS[select][9]+" points d'expérience.");
+	Chara[7]=Chara[7]+MOBS[select][8];
+	Chara[8]=Chara[8]+MOBS[select][9];
+	Chara[0]=VieC;
+	fuite=1;
+
+//Easter egg Poulet/Garde
+	if(select==1 && MOBS[select][1]==0)
+	{
+		select=4;
+	}
+//Fin easter
+
+	if(select!=5 && select!=10 && select!=15 && select!=16)
+	{
+	MOBS[select][1] = VieM;
+	}
+
+//Bosss vaincus
+	if(select==5 && MOBS[5][1]==0)
+	{
+		println("Maintenant que l'Arbre Jomo a été vaincu, vous pouvez accèder au Bois tard.");
+	}
+
+	if(select==10 && MOBS[10][1]==0)
+	{
+		println("Maintenant que l'Ours en armure a été vaincu, vous pouvez accèder aux Monts & Pics.");
+	}
+
+	if(select==15 && MOBS[15][1]==0)
+	{
+		println("Le Dragon a été vaincu, il reste un enemi à battre...");
+	}
+
+	if(select==16 && MOBS[16][1]==0)
+	{
+		println("Error 404 - Script not found.");
+	}	
+	}

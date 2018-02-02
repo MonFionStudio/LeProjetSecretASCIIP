@@ -1,0 +1,158 @@
+
+void main()
+{
+	for(int Ouais=35;Ouais>0;Ouais--)
+		{
+			clear();
+			int Wue=0;
+			do
+			{
+				println();
+				Wue=Wue+1;
+				}while(Wue!=Ouais);
+	for(int yolo=30;yolo>0;yolo--)
+	{
+		if(yolo>=4)
+				{
+					if(yolo>=5)
+						{
+							if(yolo>=6)
+								{
+									if(yolo>=7)
+										{
+											if(yolo>=8)
+												{
+													if(yolo>=9)
+														{
+															if(yolo>=10)
+																{
+																	if(yolo>=11)
+																		{
+																			if(yolo>=12)
+																				{
+																					if(yolo>=13)
+																						{
+																							if(yolo>=14)
+																								{
+																									if(yolo>=15)
+																										{
+																											if(yolo>=16)
+																												{
+																													if(yolo>=17)
+																														{
+																															if(yolo>=18)
+																																{
+																																	if(yolo>=19)
+																																		{
+																																			if(yolo>=20)
+																																				{
+																																					if(yolo>=21)
+																																						{
+																																							if(yolo>=22)
+																																								{
+																																									if(yolo>=23)
+																																										{
+																																											if(yolo>=24)
+																																												{
+																																													if(yolo>=25)
+																																														{
+																																															if(yolo>=26)
+																																																{
+																																																	if(yolo>=27)
+																																																		{
+																																																			if(yolo>=28)
+																																																				{
+																																																					if(yolo>=29)
+																																																						{																
+																																																						println();	
+																																																								}
+																																																							println();	
+																																																						}
+																																																					println();	
+																																																				}
+																																																			println();	
+																																																		}
+																																																	println();	
+																																																}
+																																															println();	
+																																														}
+																																													println();	
+																																												}
+																																											println();
+																																										}
+																																									println();
+																																								}
+																																							println();	
+																																						}
+																																					println();	
+																																				}
+																																			println();	
+																																		}
+																																	println();	
+																																}
+																															println();	
+																														}
+																													println();	
+																												}
+																											println();	
+																										}	
+																									println();
+																								}
+																							println();
+																						}
+																					println();
+																				}
+																			println();
+																		}
+																	println();
+																}
+															println();	
+														}
+													println();						
+												}
+											println();
+										}
+									println();
+								}
+							println();
+						}						
+					println();
+					clear();
+				}
+				
+		
+println("             _____ _            _____ _     _             _____           _       _ ");
+println("            |_   _| |          |  ___| |   | |           /  ___|         (_)     | |");
+println("              | | | |__   ___  | |__ | | __| | ___ _ __  \\ `--.  ___ _ __ _ _ __ | |_");
+println("              | | | '_ \\ / _ \\ |  __|| |/ _` |/ _ \\ '__|  `--. \\/ __| '__| | '_ \\| __|");
+println("              | | | | | |  __/ | |___| | (_| |  __/ |    /\\__/ / (__| |  | | |_) | |_ ");
+println("              \\_/ |_| |_|\\___| \\____/|_|\\__,_|\\___|_|    \\____/ \\___|_|  |_| .__/ \\__|");
+println("                                                                         | |       ");
+println("                                                                         |_|   ");
+println();
+println("                                            Production:");
+println("                                         Brayan et Dimitri");
+println();
+println();
+println("                                           Réalisation :");
+println("                                         Brayan et Dimitri");
+println();
+println();
+println("                                      Producteurs  exécutifs:");
+println("                                         Brayan et Dimitri");
+println();   
+println();
+println("                                             Ecriture:");
+println("                                         Brayan et Dimitri");
+println();
+println();
+println("                                          Programmation :");
+println("                                         Brayan et Dimitri");
+println();
+println();
+println("                                            Animations:");
+println("                                         Brayan et Dimitri");
+sleep(300);
+	}
+	}
+
